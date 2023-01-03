@@ -1,0 +1,17 @@
+<div class="d-flex flex-column mx-auto" style="margin-top: 10rem;">
+    <div class="d-flex flex-column text-center">
+        <h1 class="fs-2 fw-bold">Welcome on board!</h1>
+        <h2 class="fs-5 text-secondary">Choose username to enter the chat</h2>
+    </div>
+    <form class="d-flex flex-column mt-4" action="/auth" method="POST">
+        <input
+            type="text"
+            name="username"
+            placeholder="Enter username..."
+            class="form-control form-control-lg
+            {{#if error}}is-invalid{{/if}}"
+        />
+        {{#if error}}<div class="invalid-feedback d-flex">{{error}}</div>{{/if}}
+        <button type="submit" class="btn btn-lg btn-primary mt-3">Let me to the chat</button>
+    </form>
+</div>

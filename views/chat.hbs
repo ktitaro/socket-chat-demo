@@ -1,0 +1,23 @@
+<div class="row d-flex flex-column flex-grow-1">
+    <div class="col-8 d-flex flex-column h-100">
+        <span class="fs-6 fw-bold mx-auto">Messages</span>
+        <div id="chat-messages" class="d-flex flex-column
+        flex-grow-1 bg-dark bg-gradient rounded-3 p-3 my-3"
+        style="overflow-y: scroll; overflow-x: hidden"></div>
+        <form id="chat-message" class="d-flex flex-column">
+            <textarea
+                name="message"
+                class="form-control form-control-lg"
+                placeholder="Enter your message..."
+            ></textarea>
+            <button
+                class="btn btn-lg btn-primary mt-3"
+                type="submit">Send message!</button>
+        </form>
+    </div>
+    <div class="col-4 d-flex flex-column h-100">
+        <span class="fs-6 fw-bold mx-auto">Members</span>
+        <div id="chat-members" class="d-flex flex-column mt-3
+        flex-grow-1 bg-dark bg-gradient rounded-3 p-3"></div>
+    </div>
+</div>
